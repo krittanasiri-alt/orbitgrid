@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OrbitGrid — Procurement & Security FAQ</title>
+<link rel="icon" href="/assets/favicon.svg"/>
+<style>body{font-family:Sarabun,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;margin:0;padding:24px;background:#f7fafc;color:#0c1b2a}h1,h2{color:#0B3C5D}.qa{background:#fff;border:1px solid #e3e9ee;border-radius:12px;padding:16px;margin:10px 0}.q{font-weight:700}.a{margin-top:6px;color:#213449}.note{font-size:13px;color:#516273}</style></head>
+<body>
+<h1>Procurement & Security FAQ</h1>
+<p class="note">เวอร์ชันนี้เป็นกรอบคำตอบมาตรฐาน ให้ปรับให้ตรงนโยบาย/โครงสร้างระบบจริงก่อนส่ง InfoSec</p>
+
+<div class="qa"><div class="q">ข้อมูลถูกเก็บที่ไหน (Data Residency)?</div><div class="a">โฮสต์ตามภูมิภาค {{Region}} (เช่น AWS Bangkok / Azure Singapore) ตามสัญญา</div></div>
+<div class="qa"><div class="q">การเข้ารหัส?</div><div class="a">TLS 1.3 ระหว่างส่ง, AES-256 ระหว่างพักจัดเก็บ</div></div>
+<div class="qa"><div class="q">การควบคุมสิทธิ์ (RBAC)?</div><div class="a">บทบาทมาตรฐาน 12 แบบ ปรับแต่งได้ตามนโยบายขั้นต่ำจำเป็น</div></div>
+<div class="qa"><div class="q">ISO 27001 / SOC 2 สถานะ?</div><div class="a">Roadmap: ISO 27001 (เป้าหมาย Q2 2026), SOC 2 Type II (เป้าหมาย Q3 2026)</div></div>
+<div class="qa"><div class="q">RPO/RTO และการสำรองข้อมูล?</div><div class="a">สำรองรายวัน เก็บ 30 วัน, DR คนละโซน/ภูมิภาค (รายละเอียดตามสัญญา)</div></div>
+<div class="qa"><div class="q">Pen test / Vulnerability scan?</div><div class="a">ทดสอบโดยบุคคลที่สามประจำปี และสแกนรายไตรมาส (บันทึกผลพร้อมให้ตรวจ)</div></div>
+<div class="qa"><div class="q">Data Processing Agreement (DPA)?</div><div class="a">มีแม่แบบ DPA และ Standard Contractual Clauses ให้ต่อรอง</div></div>
+<div class="qa"><div class="q">Log retention & Audit trail?</div><div class="a">บันทึกแบบแก้ไขไม่ได้ เก็บสูงสุด 7 ปี (ตามข้อกำหนด)</div></div>
+<div class="qa"><div class="q">BYOK (Bring Your Own Key)?</div><div class="a">รองรับตามแพ็กเกจ Enterprise/สcope สัญญา</div></div>
+<div class="qa"><div class="q">PDPA/GDPR data subject rights?</div><div class="a">เวิร์กโฟลว์สำหรับ access/rectification/erasure พร้อมบันทึกคำขอ</div></div>
+
+<p class="note">ติดต่อทีม: security@orbitgrid.example เพื่อรับเอกสาร: Security Overview, DPIA Template, PenTest Summary</p>
+</body></html>
